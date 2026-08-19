@@ -6,7 +6,7 @@ chapter: true
 ---
 
 
-In this chapter, we'll cover the prerequisites needed to get started with [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html). You'll create DynamoDB tables and use a AWS Cloud9 envrironment to query these tables.
+In this chapter, we'll cover the prerequisites needed to get started with [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html). You'll create DynamoDB tables and use a Visual Studio Code environment to query these tables.
 
 The deployment architecture that you will be building in this lab will look like the below.
 

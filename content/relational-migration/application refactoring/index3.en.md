@@ -20,7 +20,7 @@ to make sure they work against the DynamoDB table.
 
 Let's make a small code change to demonstrate the process to customize the DynamoDB functions.
 
-6. In Cloud9, left nav, locate the chalicelib folder and open it.
+6. In VS Code, left nav, locate the chalicelib folder and open it.
 7. Locate and open the file dynamodb_calls.py
 8. Search for the text ```get_request['ConsistentRead'] = False```
 9. Update this from False to True and click File/Save to save your work.

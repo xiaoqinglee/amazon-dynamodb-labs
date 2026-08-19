@@ -10,7 +10,7 @@ to create the MySQL-ready middle tier.
 
 We can repeat this to create a new API Gateway and Lambda stack, this time using the DynamoDB stage.
 
-1. Within the Cloud9 terminal window, run:
+1. Within the VS Code terminal window, run:
 ```bash
 chalice deploy --stage dynamodb
 ```

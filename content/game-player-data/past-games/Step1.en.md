@@ -118,7 +118,7 @@ It will take a few minutes for the new secondary index to get populated. You nee
 You can find out the current status of the table and its indexes by either way:
 - Checking under **Services**, **Database**, **DynamoDB** in the AWS console.
   
-- Running the command below in the Cloud9 Terminal:
+- Running the command below in the VS Code Terminal:
     ```sh
     aws dynamodb describe-table --table-name battle-royale --query "Table.GlobalSecondaryIndexes[].IndexStatus"
     ```

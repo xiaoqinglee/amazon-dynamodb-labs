@@ -32,7 +32,7 @@ You can review this guidance when considering and planning your own relational m
 
 ## Workshop overview
 
-The workshop provides a MySQL instance running on EC2, a Cloud9 developer workstation,
+The workshop provides a MySQL instance running on EC2, a Visual Studio Code developer workstation,
 and an S3 bucket for staging data.
 
 You will create a serverless API and Python Lambda function that

@@ -26,7 +26,7 @@ chapter: true
 
 ## Launch the zETL CloudFormation stack
 
-::alert[_Do not continue unless the Cloud9 CloudFormation Template has finished deploying._]
+::alert[_Do not continue unless the Visual Studio Code CloudFormation Template has finished deploying._]
 
 1. Launch the CloudFormation template in US West 2 to deploy the resources in your account:  [![CloudFormation](/static/images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=DynamoDBzETL&templateURL=:param{key="lhol_ddb_os_zetl_setup_yaml"})  
   *Optionally, download [the YAML template](:param{key="lhol_ddb_os_zetl_setup_yaml"}) and launch it your own way*

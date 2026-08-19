@@ -200,7 +200,7 @@ It will take a few minutes for the new GSI to get populated. You need to wait un
 
 - Checking under **Services**, **Database**, **DynamoDB** in the AWS console.
 
-- Running the command below in the Cloud9 Terminal:
+- Running the command below in the VS Code Terminal:
     ```sh
     aws dynamodb describe-table --table-name battle-royale --query "Table.GlobalSecondaryIndexes[].IndexStatus"
     ```

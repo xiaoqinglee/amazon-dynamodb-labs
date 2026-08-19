@@ -12,7 +12,7 @@ The web app we have been using includes forms and buttons to perform standard CR
 
 The web app makes HTTP calls to the published API using standard GET and POST methods against certain API paths.
 
-1. In Cloud9, open the left nav and locate the file **app.py**
+1. In VS Code, open the left nav and locate the file **app.py**
 2. Double click to open and review this file
 
 In the bottom half of the file you will see several small handler functions that 

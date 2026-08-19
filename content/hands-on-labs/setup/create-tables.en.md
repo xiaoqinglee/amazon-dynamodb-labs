@@ -6,7 +6,7 @@ weight: 14
 
 We will now create tables (and in a subsequent step load data into them) based on [sample data from the DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.html).
 
-Copy the `create-table` commands below and paste them into your AWS Cloud9 command prompt, hitting enter on the last command to execute it. Then use the corresponding `wait` commands by pasting them into the same terminal and running them.
+Copy the `create-table` commands below and paste them into your VS Code terminal, hitting enter on the last command to execute it. Then use the corresponding `wait` commands by pasting them into the same terminal and running them.
 
 ```bash
 aws dynamodb create-table \

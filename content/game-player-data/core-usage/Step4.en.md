@@ -57,13 +57,12 @@ At the beginning of this script, you import the Boto 3 library and some simple c
 
 The real work of the script happens in the `fetch_game_and_users` function that’s defined in the module. This is similar to a function you would define in your application to be used by any endpoints that need this data.
 
-The `fetch_game_and_users` function does a few things. First, it makes a `Query` request to DynamoDB. This `Query` uses a `PK` of `GAME#<GameId>`. Then, it requests any entities where the sort key is between `#METADATA#<GameId>` and `USER$`. This grabs the `Game` entity, whose sort key is `#METADATA#<GameId>`, and all `UserGameMapping` entities, whose keys start with `USER#`. Sort keys of the string type are sorted by ASCII character codes. The dollar sign ($) comes directly after the pound sign (#) in [ASCII](http://support.ecisolutions.com/doc-ddms/help/reportsmenu/ascii_sort_order_chart.htm), so this ensures that you will get all mappings in the `UserGameMapping` entity.
-
+The `fetch_game_and_users` function does a few things. First, it makes a `Query` request to DynamoDB. This `Query` uses a `PK` of `GAME#<GameId>`. Then, it requests any entities where the sort key is between `#METADATA#<GameId>` and `USER$`. This grabs the `Game` entity, whose sort key is `#METADATA#<GameId>`, and all `UserGameMapping` entities, whose keys start with `USER#`. Sort keys of the string type are sorted by ASCII character codes. The dollar sign ($) comes directly after the pound sign (#) in [ASCII](https://en.wikipedia.org/wiki/ASCII#Order), so this ensures that you will get all mappings in the `UserGameMapping` entity.
 When you receive a response, you assemble the data entities into objects known by the application. You know that the first entity returned is the `Game` entity, so you create a `Game` object from the entity. For the remaining entities, you create a `UserGameMapping` object for each entity and then attach the array of users to the `Game` object.
 
 The end of the script shows the usage of the function and prints out the resulting objects.
 
-You can run the script in the Cloud9 Terminal with the following command:
+You can run the script in the VS Code Terminal with the following command:
 
 ```sh
 python scripts/fetch_game_and_players.py

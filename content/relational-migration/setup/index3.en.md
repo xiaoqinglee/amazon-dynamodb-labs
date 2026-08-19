@@ -8,7 +8,7 @@ weight : 18
 
 For your convenience, a single script can setup and populate the relational database schema.
 
-1. From the Cloud9 terminal, run
+1. From the VS Code terminal, run
 
 ```bash
 ./setup_tables.sh

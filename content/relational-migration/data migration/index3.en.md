@@ -40,7 +40,7 @@ aws dynamodb describe-import \
 
 We can also check the import status within the AWS Console.
 
-3. Click into the separate browser tab titled "AWS Cloud9" to open the AWS Console.
+3. Switch to the separate browser tab with the AWS Management Console open.
 4. In the search box, type DynamoDB to visit the DyanmoDB console.
 5. From the left nav, click Imports from S3.
 6. Notice your import is listed along with the current status. 
